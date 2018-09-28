@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_cacheStrategy="strong"
+        app:lottie_fileName="rey_updated.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tg_tg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lottie_header"
+        app:lottie_cacheStrategy="weak"
+        app:lottie_fileName="toggle.json" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tg_tg"
+        android:background="@mipmap/ic_launcher"
+        app:lottie_cacheStrategy="weak"
+        app:lottie_fileName="check_animation.json" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btn_emoji"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn_submit"
+        app:lottie_cacheStrategy="weak"
+        app:lottie_fileName="32-AngryEmoji.json" />
+
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_emoji"
+        android:layout_margin="10dp"
+        android:text="引导动画" />
+
+
+</RelativeLayout>
